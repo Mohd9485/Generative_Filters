@@ -2,7 +2,7 @@
 
 Code accompanying
 
-> **Generative models for simulation based filtering: Formulations and Empirical Comparisons**
+> **[Generative models for simulation based filtering: Formulations and Empirical Comparisons](https://arxiv.org/abs/2609.16317)**
 > 
 > [Mohammad Al-Jarrah](https://sites.google.com/view/mohammadaljarrah), [Wei Deng](https://www.weideng.org), [Bamdad Hosseini](https://bamdadhosseini.org/), [Amirhossein Taghvaei](https://amirtag.github.io)
 
