@@ -450,7 +450,7 @@ python import_data.py   # redraws the figures from it
              Formulations and Empirical Comparisons},
   author  = {Al-Jarrah, Mohammad and Deng, Wei and
              Hosseini, Bamdad and Taghvaei, Amirhossein},
-  journal={arXiv preprint arXiv:2609.16317},
+  journal = {arXiv preprint arXiv:2609.16317},
   year    = {2026}
 }
 ```
