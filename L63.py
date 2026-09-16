@@ -53,16 +53,12 @@ from concurrent.futures import ThreadPoolExecutor
 # ----------------------------------------------------------------------
 # Importing the filters from THIS directory, and proving that it happened
 # ----------------------------------------------------------------------
-# OTF.py, FMF.py, SIF.py and KRF.py each execute, at module scope,
-#
-#     sys.path.insert(0, '/home/mohd9485/Tutorial_project_dynamics')
-#
-# so that they can reach `timing_utils`. Whichever of them is imported first
-# therefore puts an OLDER copy of this repository AHEAD of this one on the
-# path, and every filter imported after it resolves there instead -- a run
-# silently built from two different versions of the same code. Pinning this
-# directory at the front of sys.path for each import, then checking where the
-# module actually came from, turns that mistake into an error at line one.
+# If another copy of this repository sits AHEAD of this one on sys.path, the
+# filters resolve there instead -- the module names match, so nothing
+# complains, and a run is silently built from two different versions of the
+# same code. Pinning this directory at the front of sys.path for each import,
+# then checking where the module actually came from, turns that mistake into
+# an error at line one.
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
 

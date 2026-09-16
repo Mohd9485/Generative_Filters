@@ -108,7 +108,7 @@ labeling = True  # set False to hide all axis labels
 # method in its panel title rather than in a legend. Set via WITH_LEGENDS=1 in
 # the environment to switch it without editing this file.
 WITH_LEGENDS = os.environ.get('WITH_LEGENDS', '1') == '1'
-ALL_LEGENDS  = WITH_LEGENDS
+ALL_LEGENDS  = WITH_LEGENDS*0
 
 # Method labels, the archive keys holding their particles/runtimes, and plot
 # colours. Six learned methods plus the two untrained baselines. C5 is simply
