@@ -518,6 +518,7 @@ if __name__ == "__main__":
         configspace   = cs,
         name          = f"StageOne_{tune}_sim{NUM_SIM}",  # namespaced away from the stage-2 tuner
         deterministic = False,
+        use_default_config = True,   # SMAC 2 defaults this to False: the defaults above would never be evaluated
         n_trials      = N_TRIALS,
         n_workers     = N_WORKERS,
     )

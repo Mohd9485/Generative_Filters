@@ -593,7 +593,7 @@ if __name__ == "__main__":
     # obvious.
     if WARM_START in ('require', 'load'):
         import glob
-        _prefix = 'sif' if tune.startswith('sif') else tune
+        _prefix = tune   # SIF.py names its checkpoints per variant: sif_ode_..., sif_sde_...
         _pattern = os.path.join(WARM_START_DIR, f'{_prefix}_{WARM_START_TAG}_*.pt')
         _found = sorted(glob.glob(_pattern))
         if not _found:
@@ -631,6 +631,7 @@ if __name__ == "__main__":
         # Note n_trials now counts (configuration, seed) evaluations, so a given
         # budget covers fewer distinct configurations than before.
         deterministic = False,
+        use_default_config = True,   # SMAC 2 defaults this to False: the defaults above would never be evaluated
         n_trials      = N_TRIALS,
         n_workers     = N_WORKERS,
     )
