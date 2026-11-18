@@ -1,0 +1,21 @@
+{
+  "method": "sif_sde",
+  "cost": 0.2669097689370041,
+  "config": {
+    "DENOISER_WEIGHT": 1.0,
+    "INFERENCE_MODE": "sde",
+    "NOISE_LEVEL": 0.1814779544991,
+    "bs": 10,
+    "clip": 0.25,
+    "fitr": 16,
+    "itr": 32,
+    "lr": 0.0002356428186,
+    "nbs": 1,
+    "nns": 9,
+    "ode": 2,
+    "ted": 4,
+    "tsc": 1,
+    "warm": 0.02,
+    "wd": 0.1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "method": "sbf",
+  "cost": 0.441644,
+  "config": {
+    "NUM_STAGES": 2,
+    "bs": 7,
+    "clip": 0.25,
+    "fitr": 4,
+    "itr": 4,
+    "lr": 0.0004834379811,
+    "nbs": 1,
+    "nns": 7,
+    "sde": 4,
+    "ted": 4,
+    "wd": 0.0
+  }
+}

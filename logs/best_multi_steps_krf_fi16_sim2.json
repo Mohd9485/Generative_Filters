@@ -1,0 +1,16 @@
+{
+  "method": "krf",
+  "cost": 0.319262,
+  "config": {
+    "bs": 1,
+    "clip": 0.5,
+    "depth": 3,
+    "fitr": 16,
+    "itr": 2,
+    "lr": 0.0002412697687,
+    "nns": 9,
+    "quad_points": 16,
+    "warm": 0.02,
+    "wd": 0.1
+  }
+}
