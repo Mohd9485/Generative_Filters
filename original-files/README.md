@@ -2,7 +2,7 @@
 
 Code accompanying
 
-> **Generative models for simulation based filtering: Formulations and Empirical Comparisons**
+> **[Generative models for simulation based filtering: Formulations and Empirical Comparisons](https://arxiv.org/abs/2609.16317)**
 > 
 > [Mohammad Al-Jarrah](https://sites.google.com/view/mohammadaljarrah), [Wei Deng](https://www.weideng.org), [Bamdad Hosseini](https://bamdadhosseini.org/), [Amirhossein Taghvaei](https://amirtag.github.io)
 
@@ -450,6 +450,7 @@ python import_data.py   # redraws the figures from it
              Formulations and Empirical Comparisons},
   author  = {Al-Jarrah, Mohammad and Deng, Wei and
              Hosseini, Bamdad and Taghvaei, Amirhossein},
+  journal = {arXiv preprint arXiv:2609.16317},
   year    = {2026}
 }
 ```

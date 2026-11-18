@@ -114,23 +114,32 @@ _SIF_SDE = {
 
 # epsilon > 0, lambda = 0: velocity head alone, so no denoiser loss regularises
 # the trunk.
-_SIF_ODE = dict(
-    _SIF_SDE,
-    INFERENCE_MODE='ode',
-    DENOISER_WEIGHT=0.0,
-    NUM_NEURON=768,
-    BATCH_SIZE=576,
-    NOISE_LEVEL=0.1433125539948,
-    LearningRate=0.0008260079241,
-    ITERATION=8192,
-    Final_Number_ITERATION=256*4,
-    ODE_STEPS=200,
-    TIME_EMBED_DIM=30,
-    TIME_SCALE=150.0,
-    WEIGHT_DECAY=0.01,
-    GRAD_CLIP=2.0,
-    WARMUP_FRAC=0.05,
-)
+_SIF_ODE = {
+    'normalization': 'None',
+    'NUM_NEURON': 768,
+    'BATCH_SIZE': 576,
+    'LearningRate': 0.0008260079241,
+    'ITERATION': 8192,
+    'Final_Number_ITERATION': 256*4,
+    'num_resblocks': 1,
+    'ODE_STEPS': 200,
+    'NOISE_LEVEL': 0.1433125539948,    # epsilon
+    'INFERENCE_MODE': 'ode',
+    'DENOISER_WEIGHT': 0.0,            # lambda
+    'TIME_EMBED_DIM': 30,
+    'TIME_SCALE': 150.0,
+    'TIME_MAX_PERIOD': 50.0,
+    'SCHEDULE': 'cosine',
+    'WARMUP_FRAC': 0.05,
+    'RESAMPLE_DATA': True,
+    'COLD_START': False,
+    'SOLVER': 'heun',
+    'ZERO_INIT_OUT': True,
+    'USE_LAYERNORM': True,
+    'OPTIMIZER': 'adamw',
+    'WEIGHT_DECAY': 0.01,
+    'GRAD_CLIP': 2.0,
+}
 
 # ----------------------------------------------------------------------
 # Optimal Transport Filter

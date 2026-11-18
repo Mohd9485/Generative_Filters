@@ -92,8 +92,6 @@ import torch
 import torch.nn as nn
 from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-import sys
-sys.path.insert(0, '/home/mohd9485/Tutorial_project_dynamics')
 from timing_utils import sync_clock
 
 
